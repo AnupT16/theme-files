@@ -67,6 +67,7 @@ const hideSearch = () => {
 // ESC -> Hide search
 document.addEventListener("keydown", function (e) {
   if (e.keyCode === 75 && (e.ctrlKey || e.metaKey)) {
+    r.preventDefault();
     showSearch();
   }
 
